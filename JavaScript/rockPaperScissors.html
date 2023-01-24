@@ -8,9 +8,49 @@
 </head>
 <body>
     <script>
+
+
+        function getUserChoice() {
+
+            let userChoice = prompt('Type "rock", "paper" or "scissors" for your selection: ');
+                userChoice = userChoice.toLowerCase();
+            if (userChoice == "rock") {
+                userChoice = ("ROCK");
+            } else if (userChoice == "paper") {
+                userChoice = ("PAPER");
+            } else if (userChoice == "scissors") {
+                userChoice = ("SCISSORS");
+            } else {
+                alert("Please type only --> 'rock', 'paper', or 'scissors' to select your choice: ");
+                getUserChoice();
+            }
+        }
+
+
+        function getComputerChoice() {
+            let compArray = ['rock', 'paper', 'scissors'];
+            let randomIndex = Math.floor(Math.random() * compArray.length);
+            let compChoice = compArray[randomIndex];
+            alert('Computer chose: ' + (compChoice));
+
+
+        }
+
+            
+            getUserChoice();
+            getComputerChoice();
+
+
+            
         
 
-
+        // function gamePlay() {
+        //     getUserChoice();
+        //     getComputerChoice();
+            
+            
+        // }
+        
 
     </script>
 </body>

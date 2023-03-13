@@ -92,3 +92,6 @@ function finalScore() {
 
 
 // playGame();
+
+
+const button = document.addEventListener('click', () => playRound());

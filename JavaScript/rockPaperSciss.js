@@ -1,4 +1,4 @@
-// console.log('hi');
+
 
 const options = ['rock', 'paper', 'scissors'];
 
@@ -24,7 +24,6 @@ function getUserChoice(){
     
 }
 
-// let userPick = getUserChoice();
 let userPick;
 let i = 0;
 let playerWins = 0;
@@ -57,31 +56,6 @@ function playRound() {
     
 }
 
-// console.log(playRound());
-// playRound(userPick, compPick);
-
-// function displayWinner () {
-//     alert('You selected: ' + userPick + ' and the Computer selected: ' + compPick);
-//     if (playRound() == 'Player') {
-//         alert('You Win!');
-//     } else if (playRound() == 'Tie') {
-//         alert ('Tie Game');
-//     } else {
-//         alert('Computer Wins! Sorry bud!');
-//     }
-// }
-
-
-
-// function winCalc () {
-//     if (playRound() == 'Computer') {
-//         compWins = compWins + 1;
-//     } else if (playRound() == 'Player') {
-//         playerWins = playerWins + 1;
-//     } else {
-//         i = (i - 1);
-//         }
-// }
 
 
 function finalScore() {

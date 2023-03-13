@@ -100,21 +100,21 @@ function finalScore() {
 
 
 
-
-function playGame (userPick, compPick) {
-
-
-    for (i = 0; i < 5; i++) {
-        playRound();
+ 
+// function playGame (userPick, compPick) {
 
 
-    }
+//     for (i = 0; i < 5; i++) {
+//         playRound();
 
-    finalScore();
+
+//     }
+
+//     finalScore();
 
     
 
-}
+// }
 
 
-playGame();
+// playGame();

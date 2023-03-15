@@ -58,6 +58,7 @@ function playRound() {
 
 
 
+
 function finalScore() {
     if (i = 5) {
         alert('The computer won ' + compWins + ' times.');
@@ -75,23 +76,27 @@ function finalScore() {
 
 
  
-// function playGame (userPick, compPick) {
+function playGame (userPick, compPick) {
 
 
-//     for (i = 0; i < 5; i++) {
-//         playRound();
+    for (i = 0; i < 5; i++) {
+        playRound();
+        document.getElementById('computer').innerHTML = 'Computer Wins: ' + compWins;
+        document.getElementById('player').innerHTML = 'Player Wins: ' + playerWins;
+
+    }
 
 
-//     }
-
-//     finalScore();
-
+    finalScore();
     
-
-// }
+}
 
 
 // playGame();
 
 
-const button = document.addEventListener('click', () => playRound());
+const button = document.addEventListener('click', () => playGame());
+
+
+// document.getElementById('computer').innerHTML = 'Computer Wins: ' + compWins;
+// document.getElementById('player').innerHTML = 'Player Wins: ' + playerWins;
